@@ -1,0 +1,186 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+.header-top {
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+.header-top .container {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 15px;
+}
+
+.header-main {
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    padding: 20px 0;
+}
+
+.header-main .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-main h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+}
+
+nav ul li {
+    position: relative;
+    display: inline-block;
+    vertical-align: top; /* 수정된 부분 */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 0px;
+    display: block;
+    line-height: normal; /* 수정된 부분 */
+}
+
+nav ul li .dropdown-content {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    min-width: 100%;
+    width: 200px;
+    border: 1px solid #ddd;
+}
+
+nav ul li .dropdown-content li {
+    display: block;
+}
+
+nav ul li .dropdown-content li a {
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    white-space: nowrap;
+}
+
+nav ul li .dropdown-content li a:hover {
+    background-color: #f1f1f1;
+}
+
+nav ul li:hover .dropdown-content {
+    display: block;
+}
+
+.search-bar {
+    display: flex;
+    gap: 5px;
+}
+
+.search-bar input {
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+.search-bar button {
+    padding: 5px 10px;
+    border: none;
+    background-color: #ff6600;
+    color: #fff;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.banner {
+    background-color: #f5deb3; /* 베이지 색 */
+    text-align: center;
+    padding: 20px 0;
+}
+
+.banner .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.banner h2 {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+}
+
+.banner p {
+    margin: 10px 0 0;
+    font-size: 18px;
+    color: #666;
+}
+
+#services {
+    background-color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.service-list {
+    list-style-type: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.service-item {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.service-header {
+    background-color: gray;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.service-body {
+    background-color: white;
+    color: black;
+    padding: 10px;
+    text-align: center;
+}
+
+.service-body p {
+    margin: 5px 0;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
